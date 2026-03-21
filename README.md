@@ -1,7 +1,7 @@
 # Network-Port-Scanner
 A lightweight TCP port scanner with a graphical user interface built with Python and Tkinter.
 
-Features
+# Features
 Simple 3-field interface – enter a target host, start port, and end port
 Multi-threaded scanning – up to 500 concurrent threads for fast results
 Service identification – automatically labels well-known ports (FTP, SSH, HTTP, HTTPS, MySQL, RDP, etc.)
@@ -14,20 +14,21 @@ Python 3.7 or newer
 Tkinter (included in the standard Python distribution; on Debian/Ubuntu install python3-tk)
 No third-party packages are required.
 
-Installation
+# Installation
 git clone https://github.com/Dmishra66/Network-Port-Scanner.git
 
-Usage
+# Usage
 python Network Port Scanner.py
 Enter the Target – an IP address (e.g. 192.168.1.1) or hostname (e.g. scanme.nmap.org).
 Set the Start Port and End Port (defaults: 1 – 1024).
 Click Start Scan. Open ports appear in real time in the results pane.
 Click Stop to cancel a scan early.
 After a scan completes, click Save Results to write the open-port list to a text file.
-Detected Services
+
+# Detected Services
 The following ports are automatically labelled:
 
-Port	Service
+# Port	Service
 21	FTP
 22	SSH
 23	Telnet
@@ -43,12 +44,13 @@ Port	Service
 8080	HTTP-Alt
 Ports not in the list are reported as Unknown.
 
-Project Structure
+# Project Structure
 nmap_portscan_gui/
 ├── Network Port Scanner.py   # Main application (scanner + GUI)
 └── README.md
-Disclaimer
+
+# Disclaimer
 Use this tool only on hosts and networks you own or have explicit permission to scan. Unauthorized port scanning may be illegal in your jurisdiction.
 
-License
+# License
 This project is licensed for educational use only. Please do not use this tool for unethical or illegal purposes.
